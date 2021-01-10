@@ -1,0 +1,148 @@
+<html>
+    <head>
+        <style>
+#msg {
+    visibility: hidden;
+    min-width: 250px;
+    background-color:yellow;
+    color: #000;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    right: 30%;
+    top: 30px;
+    font-size: 17px;
+	margin-right:30px;
+}
+
+#msg.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {top: 0; opacity: 0;} 
+    to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {top: 0; opacity: 0;}
+    to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {top: 30px; opacity: 1;} 
+    to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {top: 30px; opacity: 1;}
+    to {top: 0; opacity: 0;}
+}
+
+
+
+body
+{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fff;
+    background:url(image/291-2917541_vegetable-wallpaper.jpg);
+    background-size: cover;
+}
+.signup
+{
+    background:rgba(160, 165, 170, 0.7);
+	padding:40px;
+	width:250px;
+	margin:auto;
+	margin-top:80px;
+	height:480px;
+	margin-left:180px;
+	margin:0 auto;
+	margin-top:60px;
+}
+form
+{
+    width: 240px;
+    text-align: center;
+}
+input
+{
+    
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'Play', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+}
+input[type=button]
+{
+    border: none;
+    width: 190px;
+    background: white;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+input[type=button]:hover
+{
+    color: #fff;
+    background-color: black;
+}
+h2
+{
+    color: #000; 
+   
+    
+}
+::placeholder {
+   
+    opacity: 0.8; /* Firefox */
+  
+}
+
+
+
+        </style>
+    </head>
+<body>
+
+    <div class="signup">
+        <form>
+        <h2 style="color: #fff;">Sign Up</h2>
+        <input type="text" name="username" placeholder="Your name"><br><br>
+        <input type="text" name="address" placeholder="Address"><br><br>
+        <input type="text" name="tele" placeholder="Phone Number"><br><br>
+        <input type="text" placeholder="Email address"><br><br>  
+        <input type="password" name="pass" placeholder="Password"><br><br>    
+        <input type="password" name="pass" placeholder="Confirm Password"><br><br>    
+        <input type="button" value="Sign up" onclick="myFunction()"><br><br>
+            <div id="msg">Congratulations You Sign Up successfully!!</div>
+            <script>
+    function myFunction() {
+        var x = document.getElementById("msg");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+    </script>
+         <b>   Already have account?</b><a href="login.html" style="text-decoration: none; font-family: 'Play', sans-serif; color: rgb(31, 31, 27);"><b>&nbsp;LogIn</b></a>
+        </form>
+        
+        </div>
+
+
+</body>
+</html>
