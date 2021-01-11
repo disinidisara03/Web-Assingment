@@ -1,0 +1,29 @@
+Start the Apache and Mysql in xamp control
+
+go to browser and type in the url "localhost"
+
+then click on "phpmyadmin"
+
+then create a database named "farmingwebsite" 
+
+then create a table named "users" with 7 coloums
+
+id - int (a..i - check it)
+username - varchar(100)
+address - varchar(100)
+telephone - varchar(100)
+email - varchar(100)
+password - varchar(100)
+user_type - varcahr(100)
+then click go
+
+(READ BELOW)
+
+
+Locate the xamp folder
+
+Then copy this folder to htdocs
+
+then go to browser and search for "localhost/webassignment/register.php"
+
+
